@@ -168,7 +168,7 @@
         var canvas = $("#mycanvas")[0];
         var ctx = canvas.gerContext("2d");
         var img = new Image();
-        img.src = "ksuusbg.gif";
+        img.src = "ksuisbg.gif";
         img.onload = function() {ctx.drawImage(img, 0, 0, 300, 300); };
         
     }
@@ -193,6 +193,10 @@
         var audio = new Audio();
         audio.src = "pin.wav";
         audio.play();
+        active = false;
+        period = 60* parseInt( $("#minute").val() ) + parseInt( $("#second").val() );
+        $("#time").html("経過時間：０");
+        $("#remain").html("残り時間：" + period);
         
     }
     
