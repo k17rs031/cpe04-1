@@ -3,6 +3,10 @@
         background-color: skyblue;
     }
 
+    #mycanvas {
+      margin: 0 auto;
+    }
+
     button {
         font-style: italic;
         border-radius: 20px;
