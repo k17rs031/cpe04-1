@@ -5,6 +5,7 @@
 
     button {
       font-style: italic;
+      border-radius: 20px;
     }
 
     #minuteStr {
